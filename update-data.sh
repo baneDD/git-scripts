@@ -8,5 +8,3 @@ else
     echo "\e[33m\e[1mNOTE\e[0m: If tag message is not supplied commit message is used instead"
     exit 1
 fi
-
-# git add . && git commit -m "Updating the data for today" && git push && git tag -a v4.5.64 -m "Updating the data for today" && git push origin v4.5.64 && git checkout develop && git pull && git merge master --no-edit && git push

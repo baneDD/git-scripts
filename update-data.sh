@@ -1,5 +1,6 @@
 #!/bin/zsh
 
+# Used for hotfixing main branch. Adds and commits changes to main branch, pushes them, tags them and pushes tags and merges to develop and pushes it up
 if [ $1 ] && [ $2 ]
 then
     git add . && git commit -m "$1" && git push && git tag -a "$2" -m "${3:-$2}" && git push origin "$2" && git checkout develop && git pull && git merge master --no-edit && git push
